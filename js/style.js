@@ -12,7 +12,7 @@ btnSearch.addEventListener("click" , function(){
 
 
 async function getLocation(location) {
-    let response = await fetch(`http://api.weatherapi.com/v1/search.json?key=aa6d016633fa4edfa90181900240912&q=${location}`)
+    let response = await fetch(`https://api.weatherapi.com/v1/search.json?key=aa6d016633fa4edfa90181900240912&q=${location}`)
     if(response.ok){
         let data = await response.json()
      allData= data;
